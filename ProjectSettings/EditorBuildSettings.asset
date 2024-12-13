@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/ActSelection.unity
+    guid: d2685f723ae54a943b2921ce569a6be8
+  - enabled: 1
+    path: Assets/Scenes/Milkman.unity
+    guid: b4c1f4c9740d1484084ff0744ba9b4ec
+  - enabled: 1
+    path: Assets/Scenes/Act2.unity
+    guid: 9e2e769e3699e8f42972cf27292cf5d5
+  - enabled: 1
+    path: Assets/Scenes/Finale.unity
+    guid: ece1976abdb403f4fa6b0ce42bd8f7cd
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 29c96754e4a1c514d81b8c3991bbfec6
+  m_configObjects: {}
