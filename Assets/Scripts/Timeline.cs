@@ -340,33 +340,6 @@ public class Timeline : MonoBehaviour
 
         SpawnDudes(3, 0); //Spawn Lucky
         SpawnDudes(3, 3); //Spawn Lucky
-
-        SpawnDudes(2, 0); //Spawn Froot
-        SpawnDudes(3, 3); //Spawn Lucky
-        yield return new WaitForSeconds(1f);
-
-        SpawnDudes(2, 1); //Spawn Froot
-        SpawnDudes(3, 2); //Spawn Lucky
-        yield return new WaitForSeconds(1f);
-
-        SpawnDudes(2, 2); //Spawn Froot
-        SpawnDudes(3, 1); //Spawn Lucky
-        yield return new WaitForSeconds(1f);
-
-        SpawnDudes(2, 3); //Spawn Froot
-        SpawnDudes(3, 0); //Spawn Lucky
-        yield return new WaitForSeconds(1f);
-
-        SpawnDudes(2, 2); //Spawn Froot
-        SpawnDudes(3, 1); //Spawn Lucky
-        yield return new WaitForSeconds(1f);
-
-        SpawnDudes(2, 1); //Spawn Froot
-        SpawnDudes(3, 2); //Spawn Lucky
-        yield return new WaitForSeconds(1f);
-
-        SpawnDudes(2, 0); //Spawn Froot
-        SpawnDudes(3, 3); //Spawn Lucky
         yield return new WaitForSeconds(1f);
 
         SpawnDudes(2, 0); //Spawn Froot
@@ -395,6 +368,26 @@ public class Timeline : MonoBehaviour
 
         SpawnDudes(2, 0); //Spawn Froot
         SpawnDudes(3, 3); //Spawn Lucky
+        yield return new WaitForSeconds(1f);
+
+        SpawnDudes(2, 1); //Spawn Froot
+        SpawnDudes(3, 2); //Spawn Lucky
+        yield return new WaitForSeconds(1f);
+
+        SpawnDudes(2, 2); //Spawn Froot
+        SpawnDudes(3, 1); //Spawn Lucky
+        yield return new WaitForSeconds(1f);
+
+        SpawnDudes(2, 3); //Spawn Froot
+        SpawnDudes(3, 0); //Spawn Lucky
+        yield return new WaitForSeconds(1f);
+
+        SpawnDudes(2, 2); //Spawn Froot
+        SpawnDudes(3, 1); //Spawn Lucky
+        yield return new WaitForSeconds(1f);
+
+        SpawnDudes(2, 1); //Spawn Froot
+        SpawnDudes(3, 2); //Spawn Lucky
         yield return new WaitForSeconds(1f);
 
         SpawnDudes(2, 0); //Spawn Froot
@@ -425,6 +418,24 @@ public class Timeline : MonoBehaviour
         SpawnDudes(3, 3); //Spawn Lucky
         yield return new WaitForSeconds(1f);
         
+        SpawnDudes(3, 0); //Spawn Lucky
+        SpawnDudes(3, 1); //Spawn Lucky
+        SpawnDudes(3, 2); //Spawn Lucky
+        SpawnDudes(3, 3); //Spawn Lucky
+        yield return new WaitForSeconds(0.5f);
+
+        SpawnDudes(2, 0); //Spawn Froot
+        SpawnDudes(2, 3); //Spawn Froot
+        yield return new WaitForSeconds(0.5f);
+
+        SpawnDudes(0, 1); //Spawn Cheerio
+        SpawnDudes(0, 2); //Spawn Cheerio
+        yield return new WaitForSeconds(0.5f);
+
+        SpawnDudes(1, 1); //Spawn Pop
+        yield return new WaitForSeconds(0.5f);
+        SpawnDudes(1, 2); //Spawn Pop
+
         yield return new WaitUntil(() => SoundManager.Instance.songPosition >= 105f);
         SoundManager.Instance.playClip(5);
 

@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: anim
       value: 
       objectReference: {fileID: 547314793091950468}
+    - target: {fileID: 308717274663088121, guid: 6cf1d166cbf7ccc4ea12c287823dfb41, type: 3}
+      propertyPath: heart
+      value: 
+      objectReference: {fileID: 8318273087067486583}
     - target: {fileID: 7749724630232852946, guid: 6cf1d166cbf7ccc4ea12c287823dfb41, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5
@@ -118,3 +122,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &8318273087067486583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4983447867545270793, guid: 6cf1d166cbf7ccc4ea12c287823dfb41, type: 3}
+  m_PrefabInstance: {fileID: 3916075736958485374}
+  m_PrefabAsset: {fileID: 0}

@@ -6,11 +6,20 @@ public class PlayerController : MonoBehaviour {
     public float walkingSpeed;
     public float horizontalMotion, verticalMotion;
     public Animator anim;
+    public GameObject heart;
+    private SpriteRenderer spriteRenderer;
+    private Color currentColor;
 
     void Start()
     {
         //Set current live to max lives
         GameManager.Instance.currLives = GameManager.Instance.maxLives;
+
+        // Get the sprite renderer from heart
+        spriteRenderer = heart.GetComponent<SpriteRenderer>();
+        
+        // Get the current color of the sprite
+        currentColor = spriteRenderer.color;
     }
     // Update is called once per frame
     void Update()
@@ -65,12 +74,31 @@ public class PlayerController : MonoBehaviour {
             {
                 Debug.Log("Godmode turned on!");
                 GameManager.Instance.godMode = true;
+                GameManager.Instance.isInvulnerable = true;
             }
             else 
             {
                 Debug.Log("Godmode turned off!");
                 GameManager.Instance.godMode = false;
+                GameManager.Instance.isInvulnerable = false;
             }
+        }
+
+        if (GameManager.Instance.isInvulnerable)
+        {
+            // Set the alpha value to 0.5 (50% transparent)
+            currentColor.a = 0f;
+
+            // Apply the modified color back to the SpriteRenderer
+            spriteRenderer.color = currentColor;
+        }
+        else 
+        {
+            // Set the alpha value to 0.5 (50% transparent)
+            currentColor.a = 1f;
+
+            // Apply the modified color back to the SpriteRenderer
+            spriteRenderer.color = currentColor;
         }
     }
 }

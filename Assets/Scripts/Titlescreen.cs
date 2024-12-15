@@ -23,7 +23,7 @@ public class Titlescreen : MonoBehaviour
         leftCurtain.SetTrigger("Start");
         rightCurtain.SetTrigger("Start");
         buttons.SetTrigger("Start");
-
+        SoundManager.Instance.playClip(2);
         yield return new WaitForSeconds(transitionTime);
 
         SceneManager.LoadScene(LevelName);
